@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Todo_WebApi</string>
+    <string name="delete">削除</string>
+    <string name="edit">編集</string>
+    <string name="setting">設定</string>
+    <string name="ip_address">IPアドレス</string>
+    <string name="port_number">ポート番号</string>
+    <string name="ip_text">IPアドレス:</string>
+</resources>

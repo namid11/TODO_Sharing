@@ -1,0 +1,12 @@
+{% extends 'Main/base.html' %}
+
+{% block title %}IndexPage{% endblock %}
+
+{% block content %}
+    <h1 class="mt-3 border-bottom">Index Page</h1>
+    <nav class="nav flex-column">
+        <a class="nav-link" href="{% url 'todo_list_view' %}">リストを見る</a>
+        <a class="nav-link" href="{% url 'json_todo_datas' %}">JSON取得</a>
+    </nav>
+
+{% endblock %}

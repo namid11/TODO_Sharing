@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}BASE{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'Main/css/bootstrap.min.css' %}">
+    {% block extend_css %}{% endblock %}
+</head>
+<body>
+    <div class="container pb-5">
+        {% block content %}
+            {{ content }}
+        {% endblock %}
+    </div>
+
+    <script src="{% static '/Main/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'Main/js/bootstrap.min.js' %}"></script>
+    {% block extend_js %}{% endblock %}
+</body>
+</html>
